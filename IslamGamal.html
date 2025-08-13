@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إسلام جمال - عالم الذكاء الاصطناعي والبيانات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            direction: rtl;
+        }
+        .text-left-ar {
+            text-align: right;
+        }
+        .text-right-ar {
+            text-align: left;
+        }
+        [lang="en"] body, [lang="de"] body {
+            direction: ltr;
+        }
+        [lang="en"] .text-left-ar, [lang="de"] .text-left-ar {
+            text-align: left;
+        }
+        [lang="en"] .text-right-ar, [lang="de"] .text-right-ar {
+            text-align: right;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 transition-colors duration-300">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <!-- Language & Theme Switcher -->
+        <div class="flex justify-end space-x-2 mb-8">
+            <button id="theme-toggle" class="bg-gray-300 text-gray-800 p-2 rounded-full shadow-md hover:bg-gray-400 transition-colors">
+                <i class="fas fa-sun"></i>
+            </button>
+            <button onclick="setLanguage('ar')" class="lang-btn bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transition-colors">عربي</button>
+            <button onclick="setLanguage('en')" class="lang-btn bg-gray-300 text-gray-800 px-4 py-2 rounded-full shadow-md hover:bg-gray-400 transition-colors">English</button>
+            <button onclick="setLanguage('de')" class="lang-btn bg-gray-300 text-gray-800 px-4 py-2 rounded-full shadow-md hover:bg-gray-400 transition-colors">Deutsch</button>
+        </div>
+
+        <!-- Header Section -->
+        <header class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 md:p-10 mb-8 transition-colors duration-300">
+            <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 md:space-x-reverse">
+                <!-- Profile Image -->
+                <img src="https://placehold.co/150x150/F3F4F6/9CA3AF?text=IG" alt="صورة إسلام جمال" class="rounded-full w-32 h-32 md:w-40 md:h-40 object-cover border-4 border-blue-500 shadow-md">
+                
+                <!-- Personal Info -->
+                <div class="flex-1 text-center md:text-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="name">إسلام جمال</h1>
+                    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 font-light transition-colors duration-300" data-lang-key="title">عالم بيانات وذكاء اصطناعي | محلل بيانات</p>
+                    <div class="flex flex-wrap justify-center md:justify-end mt-4 space-x-4 space-x-reverse text-blue-500">
+                        <a href="mailto:islamibnalazhar@gmail.com" class="hover:text-blue-700 transition-colors" data-tooltip="tooltip-email"><i class="fas fa-envelope fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/islamgamalig" target="_blank" class="hover:text-blue-700 transition-colors" data-tooltip="tooltip-linkedin"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="tel:+201271215561" class="hover:text-blue-700 transition-colors" data-tooltip="tooltip-phone"><i class="fas fa-phone-alt fa-lg"></i></a>
+                        <a href="https://maps.google.com/?q=Egypt,+Cairo" target="_blank" class="hover:text-blue-700 transition-colors" data-tooltip="tooltip-location"><i class="fas fa-map-marker-alt fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 md:p-10 mb-8 transition-colors duration-300">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 border-b-2 pb-2 border-blue-500" data-lang-key="summary-title">ملخص</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg transition-colors duration-300" data-lang-key="summary-text">طالب متحمس في تخصص الذكاء الاصطناعي وعلوم البيانات، يجمع بين المسارين الأكاديميين في جامعة بني سويف الوطنية بمصر وجامعة IU الدولية للعلوم التطبيقية بألمانيا. لدي شغف بالاستفادة من البيانات لحل مشاكل العالم الحقيقي، ولدي خبرة عملية في تعلم الآلة، والتحليلات التنبؤية، وتحليل البيانات الاستكشافي. قمت ببناء وتقديم مشاريع مؤثرة مثل نظام توصية بالأفلام، ونموذج للتنبؤ بالطقس، وتحليل بيانات مبيعات سيارات على موقع eBay، مما يبرهن على مهاراتي في Python، وتصور البيانات، وتطوير النماذج. أكملت شهادات من IBM و Google Cloud، واكتسبت خبرة في AutoML، و BigQuery، و Vertex AI، و MLOps، وممارسات الذكاء الاصطناعي المسؤولة. لدي أساس قوي في الإحصاء، والاحتمالات، ومعالجة البيانات، ويكملها مهارات شخصية ممتازة في التواصل، والعمل الجماعي، والقيادة، وحل المشكلات.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 md:p-10 mb-8 transition-colors duration-300">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 border-b-2 pb-2 border-blue-500" data-lang-key="projects-title">المشاريع</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1: Image Classification -->
+                <div class="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="project1-title">تصنيف الصور باستخدام التعلم العميق و TensorFlow</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 transition-colors duration-300" data-lang-key="project1-description">تحسين دقة تصنيف الصور بنسبة 15% من خلال تدريب نموذج تعلم عميق باستخدام سير عمل TensorFlow و Keras. يشمل ذلك معالجة البيانات المسبقة، وتوسيع البيانات، وبناء النموذج، والتدريب، والتقييم، والتنبؤ.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold" data-lang-key="learn-more">اعرف المزيد &rarr;</a>
+                </div>
+                
+                <!-- Project 2: Weather Prediction -->
+                <div class="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="project2-title">التنبؤ بالطقس باستخدام تعلم الآلة</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 transition-colors duration-300" data-lang-key="project2-description">نموذج تعلم آلة للتنبؤ بالظروف الجوية بناءً على البيانات التاريخية. تحسين دقة التنبؤ بالطقس بنسبة 15% باستخدام تقنيات تعلم الآلة المتقدمة.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold" data-lang-key="learn-more">اعرف المزيد &rarr;</a>
+                </div>
+
+                <!-- Project 3: eBay Car Sales -->
+                <div class="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="project3-title">استكشاف بيانات مبيعات سيارات eBay</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 transition-colors duration-300" data-lang-key="project3-description">تحليل 5,000 قائمة بيع سيارات في ألمانيا على موقع eBay. زيادة كفاءة اتخاذ القرار بنسبة 30% من خلال تنظيف البيانات، وتحليلها، وتصورها للحصول على رؤى حول سوق السيارات المستعملة.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold" data-lang-key="learn-more">اعرف المزيد &rarr;</a>
+                </div>
+                
+                <!-- Project 4: Financial Data Scraping -->
+                <div class="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="project4-title">استخراج البيانات المالية باستخدام Nasdaq Data Link API</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 transition-colors duration-300" data-lang-key="project4-description">تحسين القدرة على تحليل البيانات المالية بنسبة 20% عن طريق تحسين جمع البيانات من Nasdaq Data Link API. يشمل ذلك سحب بيانات السلاسل الزمنية، وتنظيفها، وتصفيتها، وإعدادها للتحليل.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold" data-lang-key="learn-more">اعرف المزيد &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 md:p-10 mb-8 transition-colors duration-300">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 border-b-2 pb-2 border-blue-500" data-lang-key="skills-title">المهارات</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Programming & Cloud -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="skills-prog-cloud">البرمجة والسحابة</h3>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 transition-colors duration-300">
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>SQL</li>
+                        <li>Microsoft Excel</li>
+                        <li>Google BigQuery</li>
+                        <li>Google Cloud Platform (GCP)</li>
+                        <li>AutoML, Vertex AI, ML APIs</li>
+                    </ul>
+                </div>
+                <!-- AI & Machine Learning -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="skills-ai-ml">الذكاء الاصطناعي وتعلم الآلة</h3>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 transition-colors duration-300">
+                        <li>Machine Learning</li>
+                        <li>Automated Machine Learning</li>
+                        <li>MLOps</li>
+                        <li>Responsible AI</li>
+                        <li>AI for Climate Change</li>
+                        <li>Predictive Modeling</li>
+                    </ul>
+                </div>
+                <!-- Data Analytics -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300" data-lang-key="skills-data-analytics">تحليل البيانات</h3>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 transition-colors duration-300">
+                        <li>Data Analysis</li>
+                        <li>Data Cleaning</li>
+                        <li>Data Visualization</li>
+                        <li>Exploratory Data Analysis</li>
+                        <li>Data Processing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 md:p-10 mb-8 transition-colors duration-300">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 border-b-2 pb-2 border-blue-500" data-lang-key="experience-title">الخبرة</h2>
+            <div class="space-y-6">
+                <!-- HP Tech Ventures -->
+                <div class="flex items-start space-x-4 space-x-reverse">
+                    <span class="text-blue-500 text-2xl mt-1"><i class="fas fa-briefcase"></i></span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors duration-300" data-lang-key="exp-hp-title">متدرب عن بعد في HP Tech Ventures</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1 transition-colors duration-300" data-lang-key="exp-hp-duration">سبتمبر 2024 - سبتمبر 2024</p>
+                        <p class="text-gray-700 dark:text-gray-300 transition-colors duration-300" data-lang-key="exp-hp-desc">زيادة محفظة الاستثمار المحتملة بنسبة 15% من خلال إجراء أبحاث السوق. تحسين نجاح عمليات الاستحواذ بنسبة 25% من خلال تقييم الجدوى المالية للشركات المستهدفة.</p>
+                    </div>
+                </div>
+                <!-- NeuronetiX -->
+                <div class="flex items-start space-x-4 space-x-reverse">
+                    <span class="text-blue-500 text-2xl mt-1"><i class="fas fa-briefcase"></i></span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors duration-300" data-lang-key="exp-neuron-title">متدرب في تحليل البيانات في NeuronetiX</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1 transition-colors duration-300" data-lang-key="exp-neuron-duration">أغسطس 2024 - سبتمبر 2024</p>
+                        <p class="text-gray-700 dark:text-gray-300 transition-colors duration-300" data-lang-key="exp-neuron-desc">تطوير الكفاءة في Excel، Power BI، و SQL. تعزيز مهارات تحليل البيانات، وتحسين الدقة بنسبة 15% من خلال التعاون مع فريق من 5 أفراد.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 md:p-10 mb-8 transition-colors duration-300">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 border-b-2 pb-2 border-blue-500" data-lang-key="education-title">التعليم</h2>
+            <div class="space-y-6">
+                <!-- Beni Suef University -->
+                <div class="flex items-start space-x-4 space-x-reverse">
+                    <span class="text-blue-500 text-2xl mt-1"><i class="fas fa-graduation-cap"></i></span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors duration-300" data-lang-key="edu-bsnu-title">جامعة بني سويف الوطنية</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1 transition-colors duration-300" data-lang-key="edu-bsnu-degree">بكالوريوس، الذكاء الاصطناعي وعلوم البيانات</p>
+                        <p class="text-gray-700 dark:text-gray-300 transition-colors duration-300" data-lang-key="edu-bsnu-duration">أكتوبر 2023 - يوليو 2027</p>
+                    </div>
+                </div>
+                <!-- IU International University -->
+                <div class="flex items-start space-x-4 space-x-reverse">
+                    <span class="text-blue-500 text-2xl mt-1"><i class="fas fa-graduation-cap"></i></span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors duration-300" data-lang-key="edu-iu-title">جامعة IU الدولية للعلوم التطبيقية</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1 transition-colors duration-300" data-lang-key="edu-iu-degree">بكالوريوس، علوم البيانات</p>
+                        <p class="text-gray-700 dark:text-gray-300 transition-colors duration-300" data-lang-key="edu-iu-duration">مارس 2025 - مارس 2028</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 dark:text-gray-400 mt-12 p-4 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
+            <p data-lang-key="footer-text">&copy; 2025 إسلام جمال. كل الحقوق محفوظة.</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript for multi-language and theme functionality -->
+    <script>
+        const translations = {
+            'ar': {
+                'name': 'إسلام جمال',
+                'title': 'عالم بيانات وذكاء اصطناعي | محلل بيانات',
+                'summary-title': 'ملخص',
+                'summary-text': 'طالب متحمس في تخصص الذكاء الاصطناعي وعلوم البيانات، يجمع بين المسارين الأكاديميين في جامعة بني سويف الوطنية بمصر وجامعة IU الدولية للعلوم التطبيقية بألمانيا. لدي شغف بالاستفادة من البيانات لحل مشاكل العالم الحقيقي، ولدي خبرة عملية في تعلم الآلة، والتحليلات التنبؤية، وتحليل البيانات الاستكشافي. قمت ببناء وتقديم مشاريع مؤثرة مثل نظام توصية بالأفلام، ونموذج للتنبؤ بالطقس، وتحليل بيانات مبيعات سيارات على موقع eBay، مما يبرهن على مهاراتي في Python، وتصور البيانات، وتطوير النماذج. أكملت شهادات من IBM و Google Cloud، واكتسبت خبرة في AutoML، و BigQuery، و Vertex AI، و MLOps، وممارسات الذكاء الاصطناعي المسؤولة. لدي أساس قوي في الإحصاء، والاحتمالات، ومعالجة البيانات، ويكملها مهارات شخصية ممتازة في التواصل، والعمل الجماعي، والقيادة، وحل المشكلات.',
+                'projects-title': 'المشاريع',
+                'project1-title': 'تصنيف الصور باستخدام التعلم العميق و TensorFlow',
+                'project1-description': 'تحسين دقة تصنيف الصور بنسبة 15% من خلال تدريب نموذج تعلم عميق باستخدام سير عمل TensorFlow و Keras. يشمل ذلك معالجة البيانات المسبقة، وتوسيع البيانات، وبناء النموذج، والتدريب، والتقييم، والتنبؤ.',
+                'project2-title': 'التنبؤ بالطقس باستخدام تعلم الآلة',
+                'project2-description': 'نموذج تعلم آلة للتنبؤ بالظروف الجوية بناءً على البيانات التاريخية. تحسين دقة التنبؤ بالطقس بنسبة 15% باستخدام تقنيات تعلم الآلة المتقدمة.',
+                'project3-title': 'استكشاف بيانات مبيعات سيارات eBay',
+                'project3-description': 'تحليل 5,000 قائمة بيع سيارات في ألمانيا على موقع eBay. زيادة كفاءة اتخاذ القرار بنسبة 30% من خلال تنظيف البيانات، وتحليلها، وتصورها للحصول على رؤى حول سوق السيارات المستعملة.',
+                'project4-title': 'استخراج البيانات المالية باستخدام Nasdaq Data Link API',
+                'project4-description': 'تحسين القدرة على تحليل البيانات المالية بنسبة 20% عن طريق تحسين جمع البيانات من Nasdaq Data Link API. يشمل ذلك سحب بيانات السلاسل الزمنية، وتنظيفها، وتصفيتها، وإعدادها للتحليل.',
+                'learn-more': 'اعرف المزيد &rarr;',
+                'skills-title': 'المهارات',
+                'skills-prog-cloud': 'البرمجة والسحابة',
+                'skills-ai-ml': 'الذكاء الاصطناعي وتعلم الآلة',
+                'skills-data-analytics': 'تحليل البيانات',
+                'experience-title': 'الخبرة',
+                'exp-hp-title': 'متدرب عن بعد في HP Tech Ventures',
+                'exp-hp-duration': 'سبتمبر 2024 - سبتمبر 2024',
+                'exp-hp-desc': 'زيادة محفظة الاستثمار المحتملة بنسبة 15% من خلال إجراء أبحاث السوق. تحسين نجاح عمليات الاستحواذ بنسبة 25% من خلال تقييم الجدوى المالية للشركات المستهدفة.',
+                'exp-neuron-title': 'متدرب في تحليل البيانات في NeuronetiX',
+                'exp-neuron-duration': 'أغسطس 2024 - سبتمبر 2024',
+                'exp-neuron-desc': 'تطوير الكفاءة في Excel، Power BI، و SQL. تعزيز مهارات تحليل البيانات، وتحسين الدقة بنسبة 15% من خلال التعاون مع فريق من 5 أفراد.',
+                'education-title': 'التعليم',
+                'edu-bsnu-title': 'جامعة بني سويف الوطنية',
+                'edu-bsnu-degree': 'بكالوريوس، الذكاء الاصطناعي وعلوم البيانات',
+                'edu-bsnu-duration': 'أكتوبر 2023 - يوليو 2027',
+                'edu-iu-title': 'جامعة IU الدولية للعلوم التطبيقية',
+                'edu-iu-degree': 'بكالوريوس، علوم البيانات',
+                'edu-iu-duration': 'مارس 2025 - مارس 2028',
+                'footer-text': '&copy; 2025 إسلام جمال. كل الحقوق محفوظة.',
+                'tooltip-email': 'البريد الإلكتروني',
+                'tooltip-linkedin': 'لينكد إن',
+                'tooltip-phone': 'الهاتف',
+                'tooltip-location': 'الموقع',
+            },
+            'en': {
+                'name': 'Islam Gamal',
+                'title': 'AI & Data Scientist | Data Analyst',
+                'summary-title': 'Summary',
+                'summary-text': 'Motivated student of Artificial Intelligence and Data Science, currently pursuing dual academic paths at Beni-Suef National University (BSNU), Egypt and IU International University of Applied Sciences, Germany. I\'m passionate about leveraging data to solve real-world problems and have hands-on experience in machine learning, predictive analytics, and exploratory data analysis. Built and delivered impactful projects such as a movie recommendation system, a weather prediction model, and eBay car sales data analysis, demonstrating my skills in Python, data visualization, and model development. Completed certifications from IBM and Google Cloud, gaining expertise in AutoML, BigQuery, Vertex AI, MLOps, and Responsible AI practices. Strong foundation in statistics, probability, and data processing, complemented by excellent soft skills in communication, teamwork, leadership, and problem solving.',
+                'projects-title': 'Projects',
+                'project1-title': 'Image Classification Using Deep Learning and TensorFlow',
+                'project1-description': 'Increased image classification accuracy by 15% by training a deep learning model using TensorFlow and Keras workflow. Includes data preprocessing, augmentation, model building, training, evaluation, and prediction.',
+                'project2-title': 'Predicting the Weather Using Machine Learning',
+                'project2-description': 'A machine learning model to predict weather conditions based on historical data. Improved weather prediction accuracy by 15% using advanced machine learning techniques.',
+                'project3-title': 'Exploring eBay Car Sales Data',
+                'project3-description': 'Analyzed 5,000 eBay Germany car sales listings. Increased decision-making efficiency by 30% by cleaning, analyzing, and visualizing data to gain insights into the used car market.',
+                'project4-title': 'Web-Scraping Financial Data using Nasdaq Data Link API',
+                'project4-description': 'Improved financial data analysis capacity by 20% by optimizing data collection from Nasdaq Data Link API. This involves pulling time-series data, cleaning it, filtering for a specific date range, and preparing it for further analysis.',
+                'learn-more': 'Learn More &rarr;',
+                'skills-title': 'Skills',
+                'skills-prog-cloud': 'Programming & Cloud',
+                'skills-ai-ml': 'AI & Machine Learning',
+                'skills-data-analytics': 'Data Analytics Skills',
+                'experience-title': 'Experience',
+                'exp-hp-title': 'HP Tech Ventures Remote Extern',
+                'exp-hp-duration': 'September 2024 - September 2024',
+                'exp-hp-desc': 'Increased potential investment portfolio by 15% by conducting market research. Improved acquisition success by 25% by evaluating the financial viability of target companies.',
+                'exp-neuron-title': 'Data Analysis Intern at NeuronetiX',
+                'exp-neuron-duration': 'August 2024 - September 2024',
+                'exp-neuron-desc': 'Developed proficiency in Excel, Power BI, and SQL. Enhanced data analysis skills, improving accuracy by 15% through collaboration with a team of 5.',
+                'education-title': 'Education',
+                'edu-bsnu-title': 'Beni Suef National University',
+                'edu-bsnu-degree': 'Bachelor\'s degree, Artificial intelligence and data science',
+                'edu-bsnu-duration': 'October 2023 - July 2027',
+                'edu-iu-title': 'IU International University of Applied Sciences',
+                'edu-iu-degree': 'Bachelor\'s degree, Data science',
+                'edu-iu-duration': 'March 2025 - March 2028',
+                'footer-text': '&copy; 2025 Islam Gamal. All rights reserved.',
+                'tooltip-email': 'Email',
+                'tooltip-linkedin': 'LinkedIn',
+                'tooltip-phone': 'Phone',
+                'tooltip-location': 'Location',
+            },
+            'de': {
+                'name': 'Islam Gamal',
+                'title': 'KI & Datenwissenschaftler | Datenanalyst',
+                'summary-title': 'Zusammenfassung',
+                'summary-text': 'Motivierter Student der Künstlichen Intelligenz und Datenwissenschaft, der derzeit ein Doppelstudium an der Beni-Suef National University (BSNU) in Ägypten und der IU Internationalen Hochschule in Deutschland absolviert. Ich bin leidenschaftlich daran interessiert, Daten zur Lösung realer Probleme zu nutzen und verfüge über praktische Erfahrungen im Bereich maschinelles Lernen, prädiktive Analytik und explorative Datenanalyse. Ich habe wirkungsvolle Projekte wie ein Filmempfehlungssystem, ein Wettervorhersagemodell und eine Analyse von eBay-Autoverkaufsdaten erstellt und umgesetzt, was meine Fähigkeiten in Python, Datenvisualisierung und Modellentwicklung demonstriert. Ich habe Zertifizierungen von IBM und Google Cloud abgeschlossen und dabei Fachwissen in AutoML, BigQuery, Vertex AI, MLOps und verantwortungsvollen KI-Praktiken erworben. Ich habe ein starkes Fundament in Statistik, Wahrscheinlichkeitsrechnung und Datenverarbeitung, ergänzt durch exzellente Soft Skills in Kommunikation, Teamarbeit, Führung und Problemlösung.',
+                'projects-title': 'Projekte',
+                'project1-title': 'Bildklassifizierung mit Deep Learning und TensorFlow',
+                'project1-description': 'Erhöhte die Genauigkeit der Bildklassifizierung um 15 % durch das Training eines Deep-Learning-Modells mit dem TensorFlow- und Keras-Workflow. Beinhaltet Datenvorverarbeitung, Augmentierung, Modellaufbau, Training, Bewertung und Vorhersage.',
+                'project2-title': 'Wettervorhersage mit maschinellem Lernen',
+                'project2-description': 'Ein maschinelles Lernmodell zur Vorhersage von Wetterbedingungen basierend auf historischen Daten. Verbessert die Genauigkeit der Wettervorhersage um 15 % mithilfe fortschrittlicher Techniken des maschinellen Lernens.',
+                'project3-title': 'Analyse von eBay-Autoverkaufsdaten',
+                'project3-description': 'Analyse von 5.000 eBay-Autoverkaufsanzeigen in Deutschland. Steigerung der Entscheidungseffizienz um 30 % durch die Bereinigung, Analyse und Visualisierung von Daten, um Einblicke in den Gebrauchtwagenmarkt zu gewinnen.',
+                'project4-title': 'Web-Scraping von Finanzdaten mit der Nasdaq Data Link API',
+                'project4-description': 'Verbesserte die Kapazität zur Finanzdatenanalyse um 20 % durch die Optimierung der Datenerfassung von der Nasdaq Data Link API. Dies beinhaltet das Abrufen von Zeitreihendaten, deren Bereinigung, Filterung nach einem bestimmten Datumsbereich und die Vorbereitung für die weitere Analyse.',
+                'learn-more': 'Mehr erfahren &rarr;',
+                'skills-title': 'Fähigkeiten',
+                'skills-prog-cloud': 'Programmierung & Cloud',
+                'skills-ai-ml': 'KI & maschinelles Lernen',
+                'skills-data-analytics': 'Datenanalyse-Fähigkeiten',
+                'experience-title': 'Erfahrung',
+                'exp-hp-title': 'Remote Extern bei HP Tech Ventures',
+                'exp-hp-duration': 'September 2024 - September 2024',
+                'exp-hp-desc': 'Erhöhte das potenzielle Investitionsportfolio um 15 % durch Marktforschung. Verbessert den Akquisitionserfolg um 25 % durch die Bewertung der finanziellen Machbarkeit von Zielunternehmen.',
+                'exp-neuron-title': 'Praktikant für Datenanalyse bei NeuronetiX',
+                'exp-neuron-duration': 'August 2024 - September 2024',
+                'exp-neuron-desc': 'Entwicklung von Kenntnissen in Excel, Power BI und SQL. Verbesserung der Datenanalysefähigkeiten, Steigerung der Genauigkeit um 15 % durch Zusammenarbeit mit einem Team von 5 Personen.',
+                'education-title': 'Bildung',
+                'edu-bsnu-title': 'Nationale Universität Beni Suef',
+                'edu-bsnu-degree': 'Bachelor, Künstliche Intelligenz und Datenwissenschaft',
+                'edu-bsnu-duration': 'أكتوبر 2023 - يوليو 2027',
+                'edu-iu-title': 'IU Internationale Hochschule für Angewandte Wissenschaften',
+                'edu-iu-degree': 'Bachelor, Datenwissenschaft',
+                'edu-iu-duration': 'مارس 2025 - مارس 2028',
+                'footer-text': '&copy; 2025 Islam Gamal. Alle Rechte vorbehalten.',
+                'tooltip-email': 'Email',
+                'tooltip-linkedin': 'LinkedIn',
+                'tooltip-phone': 'Telefon',
+                'tooltip-location': 'Standort',
+            }
+        };
+
+        const elements = document.querySelectorAll('[data-lang-key]');
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const themeToggle = document.getElementById('theme-toggle');
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.body.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+            
+            // Set font family based on language
+            if (lang === 'ar') {
+                document.body.style.fontFamily = "'Cairo', 'Inter', sans-serif";
+            } else {
+                document.body.style.fontFamily = "'Inter', 'Cairo', sans-serif";
+            }
+
+            elements.forEach(el => {
+                const key = el.getAttribute('data-lang-key');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update tooltips and buttons
+            document.querySelector('[data-tooltip="tooltip-email"]').title = translations[lang]['tooltip-email'];
+            document.querySelector('[data-tooltip="tooltip-linkedin"]').title = translations[lang]['tooltip-linkedin'];
+            document.querySelector('[data-tooltip="tooltip-phone"]').title = translations[lang]['tooltip-phone'];
+            document.querySelector('[data-tooltip="tooltip-location"]').title = translations[lang]['tooltip-location'];
+
+            langBtns.forEach(btn => {
+                btn.classList.remove('bg-blue-500', 'text-white');
+                btn.classList.add('bg-gray-300', 'text-gray-800');
+            });
+            document.querySelector(`button[onclick="setLanguage('${lang}')"]`).classList.remove('bg-gray-300', 'text-gray-800');
+            document.querySelector(`button[onclick="setLanguage('${lang}')"]`).classList.add('bg-blue-500', 'text-white');
+        }
+
+        // Theme toggle functionality
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+            const isDarkMode = body.classList.contains('dark');
+            
+            // Update icons and text
+            if (isDarkMode) {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                body.classList.remove('bg-gray-50', 'text-gray-800');
+                body.classList.add('bg-gray-900', 'text-white');
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                body.classList.remove('bg-gray-900', 'text-white');
+                body.classList.add('bg-gray-50', 'text-gray-800');
+            }
+        }
+        
+        themeToggle.addEventListener('click', toggleTheme);
+
+        // Set initial language to Arabic
+        document.addEventListener('DOMContentLoaded', () => setLanguage('ar'));
+    </script>
+</body>
+</html>
